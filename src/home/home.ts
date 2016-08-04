@@ -37,6 +37,10 @@ export class Home {
     this._callApi('Secured', 'http://localhost:3001/api/protected/random-quote');
   }
 
+  callEventApi() {
+    this._callApi('Secured', 'http://localhost:3001/api/events/random-quote');
+  }
+
   _callApi(type, url) {
     this.response = null;
     if (type === 'Anonymous') {
